@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento (HTML5) -->
+<html lang="pt-br"> <!-- Início do HTML com idioma em português do Brasil -->
+
+<head>
+    <script src="script.js"></script> <!-- Importa o JavaScript externo -->
+    <link rel="stylesheet" href="style.css"> <!-- Importa o CSS externo -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidade com IE -->
+    <meta name="description"
+        content="Meu portfólio de desenvolvedor frontend, mostrando meus projetos e habilidades, também fala sobre ks designs."> <!-- Descrição do site para buscadores -->
+    <meta name="keywords"
+        content="kinha sousa, desenvolvimento web, frontend, HTML, CSS, JavaScript, portfólio, designer grafica, ks design"> <!-- Palavras-chave para SEO -->
+    <meta name="author" content="Kinha Sousa"> <!-- Nome da autora -->
+    <meta property="og:type" content="website"> <!-- Tipo de conteúdo para redes sociais -->
+    <title>BoneKinha</title> <!-- Título da aba do navegador -->
+</head>
+
+<body>
+    <!-- Cabeçalho com título, imagem e subtítulo -->
+    <header class="cabecalho">
+        <div class="titulo">
+            <h1>Bone</h1>
+        </div>
+        <div class="logo">
+            <img src="image/img-principal.png" alt="BoneKinha"> <!-- Imagem principal -->
+        </div>
+        <div class="subtitulo">
+            <h2>Kinha</h2>
+        </div>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav class="navbar">
+        <a href="#apresentacao">Apresentação</a> <!-- Link para a seção de apresentação -->
+        <a href="#galeria">Fotos de projetos</a> <!-- Link para a galeria -->
+        <a href="#contatos">Contatos</a> <!-- Link para contatos -->
+    </nav>
+
+    <!-- Seção de apresentação com foto e texto -->
+    <div class="sobre">
+        <div class="minha-foto">
+            <img src="image/kinha.jpg" alt="Kinha"> <!-- Foto da criadora do site -->
+        </div>
+        <div class="apresentacao" id="apresentacao">
+            <p>
+                Olá!<br>Sou apaixonada por design e desenvolvimento web. Crio sites com HTML, CSS e um toque de
+                criatividade para transformar ideias em experiências visuais. Também trabalho com convites
+                personalizados, montagem de fotos e artes para redes sociais. Estou sempre em busca de aprender mais e
+                crescer como profissional. Seja bem-vindo(a) ao meu blog!
+            </p>
+        </div>
+    </div>
+
+    <!-- Seção da galeria com miniaturas clicáveis -->
+    <section class="galeria" id="galeria">
+        <h2>Meus Projetos</h2>
+
+        <!-- Imagem em destaque que muda quando clica nas miniaturas -->
+        <div class="imagem-destaque">
+            <img id="imgDestaque" src="image/img1.jpg" alt="Projeto 1"> <!-- Imagem inicial destacada -->
+            <p id="legendaDestaque">Convite de aniversário</p> <!-- Legenda da imagem em destaque -->
+        </div>
+
+        <!-- Miniaturas clicáveis -->
+        <div class="miniaturas">
+            <!-- Cada imagem tem uma legenda associada e executa a função mostrarImagem(this) ao clicar -->
+            <img src="image/img1.jpg" alt="Projeto 1" data-legenda="Convite de aniversário" onclick="mostrarImagem(this)">
+            <img src="image/img2.jpg" alt="Projeto 2" data-legenda="Banner" onclick="mostrarImagem(this)">
+            <img src="image/img3.jpg" alt="Projeto 3" data-legenda="Convite de aniversário" onclick="mostrarImagem(this)">
+            <img src="image/img4.jpg" alt="Projeto 4" data-legenda="Cartão de visita" onclick="mostrarImagem(this)">
+            <img src="image/img5.png" alt="Projeto 5" data-legenda="Montagem" onclick="mostrarImagem(this)">
+            <img src="image/pj1.png" alt="Projeto 6" data-legenda="Front End" onclick="mostrarImagem(this)">
+            <img src="image/menu.png" alt="Projeto 7" data-legenda="Tabela" onclick="mostrarImagem(this)">
+            <img src="image/cha.jpg" alt="Projeto 8" data-legenda="Convites diversos" onclick="mostrarImagem(this)">
+            <img src="image/KS.jpg" alt="Projeto 9" data-legenda="Montagens diversas" onclick="mostrarImagem(this)">
+            <img src="image/lembrete.png" alt="Projeto 10" data-legenda="Posts para redes social" onclick="mostrarImagem(this)">
+        </div>
+    </section>
+
+    <!-- Seção de contato com formulário -->
+    <section class="contato" id="contatos">
+        <h2>Entre em Contato</h2>
+        <form class="formulario" action="https://formsubmit.co/kinhasousa15@hotmail.com" method="post">
+            <input type="hidden" name="_captcha" value="false"> <!-- Desativa o captcha -->
+            <input type="text" name="nome" placeholder="Seu nome" required> <!-- Campo nome -->
+            <input type="email" name="email" placeholder="Seu e-mail" required> <!-- Campo email -->
+            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea> <!-- Campo mensagem -->
+            <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
+        </form>
+    </section>
+
+    <!-- Botão fixo do WhatsApp no canto inferior direito -->
+    <a href="https://wa.me/5585985367598?text=Olá!%20Vim%20pelo%20seu%20site%20e%20quero%20falar%20com%20você!"
+        class="botao-whatsapp" target="_blank" title="Fale comigo no WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+
+</body>
+
+</html>
