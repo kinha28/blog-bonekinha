@@ -23,3 +23,7 @@ Online portfolio built with **HTML, CSS, and JavaScript** to showcase my **graph
 ### 📸 Demonstração  
 ![Tela inicial](image/b1.png)  
 ![Seção de apresentação](image/b2.png)  
+
+🔗 **Acesse o site online:** [Clique aqui para visitar](https://kinha28.github.io/blog-bonekinha/)  
+
+
