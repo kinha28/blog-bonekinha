@@ -20,3 +20,6 @@ Online portfolio built with **HTML, CSS, and JavaScript** to showcase my **graph
 - Fixed WhatsApp button  
 - Responsive layout  
 
+### 📸 Demonstração  
+![Tela inicial](image/b1.png)  
+![Seção de apresentação](image/b2.png)  
